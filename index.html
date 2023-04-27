@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Curso introductorio a HTML5 y CSS3" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Adriana Borbon C" />
+    <title>Recetas </title>
+    <!-- enlaces a hojas de estilos -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- scripts js -->
+</head>
+
+<body>
+    <header>
+        <div class="txt-logo">
+            <p>
+                <img id="logo" src="./images/logo.png">Recetas.com
+            </p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Platillos Principales |</a></li>
+                <li><a href="#">Postres |</a></li>
+                <li><a href="#">Tabla Nutricional |</a></li>
+                <li><a href="#">Contactenos |</a></li>
+                <li><a href="#">Sitio de interes |</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Bienvenidos a nuestro sitio web sobre gastronomía latina, te invitamos a preparar nuestras recetas</p>
+            <h3>Platillos Principales</h3>
+            <div>
+                <Span><b>**Arroz Criollo**</b></Span>
+                <br>
+                <br>
+                <div>
+                    <img class="img-extra" src="./images/arroz.jpg" alt="Arroz Criollo">
+                </div>
+                <Span>Tiempo de preparación: <strong>45 minutos</strong> Número de porciones <strong>4</strong></Span>
+            </div>
+
+            <p><b>Ingredientes</b></p>
+
+            <ul>
+                <li>Salsa de tomate</li>
+                <li>2 cucharadas de aceite 14gr</li>
+                <li>1 cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>1 pimentón rojo</li>
+                <li>1 taza de arroz</li>
+                <li>1 taza de maíz</li>
+            </ul>
+
+            <p><b>Preparación</b></p>
+                <ol type="1">
+                    <li>Calentar en una olla el aceite, sofreir la cebolla junto con el ajo, el pimentín por 3 minutos</li>
+                    <li>Adicionar el arroz y continua sofriendo para que se dore</li>
+                    <li>Agregar el pollo, el maíz desgranado y la verduras</li>
+                    <li>Mezclar todo, rectificar sal, y dejar hasta que se seque</li>
+                    <li>Bajar el fuego, tapar la olla y continuar la cocción por 25 minutos más</li>
+                </ol>
+            <sup><b>Esta rica receta fue proporcionada por María Paula</b></sup>
+
+            <h3>Postres</h3>
+            <div>
+                <Span><b>**Pie de Limón**</b></Span>
+                <br>
+                <br>
+                <div>
+                    <img class="img-extra" src="./images/pie.jpg" alt="Pie de Limón">
+                </div>
+                <Span>Tiempo de preparación: <strong>1 hora 30 minutos</strong> Número de porciones <strong>8</strong></Span>
+            </div>
+            
+            <p><b>Ingredientes</b></p>
+            
+            <ul>
+                <li>300gr de galleta de chocolate</li>
+                <li>150 gr de mantequilla derretida</li>
+                <li>8 yemas de huevo</li>
+                <li>2 latas de leche condesada</li>
+                <li>240 ml de jugo de lima</li>
+            </ul>
+
+            <div>
+                <Span><b>**Arroz con leche**</b></Span>
+                <br>
+                <br>
+                <div>
+                    <img class="img-extra" src="./images/arrozConLeche.jpg" alt="Arroz con leche">
+                </div>
+                <Span>Tiempo de preparación: <strong>30 minutos</strong> Número de porciones <strong>8</strong></Span>
+            </div>
+            
+            <p><b>Ingredientes</b></p>
+            
+            <ul>
+                <li>215 grs de arroz</li>
+                <li>2 litros de leche</li>
+                <li>215 grs de azúcar</li>
+                <li>1 rama de canela</li>
+                <li>1 cucharada de mantequilla</li>
+                <li>sal al agusto</li>
+            </ul>
+            
+            <p><b>Preparación</b></p>
+            <ol type="1">
+                <li>Calentar la leche y agregar el arroz</li>
+                <li>Adicionar el azúcar y la canela</li>
+                <li>Agregar la mantequilla y cocinar a fuego lento tapado</li>
+                <li>Cocinar por 25 minutos aproximadamente o hasta que este blando el arroz</li>
+                <li>Refrigerar por 3 horas y servir frío</li>
+            </ol>
+            <sup><b>Esta fácil receta es una contribución de Janeth Patricia</b></sup>
+
+        </section>
+
+        <section id="sct-table">
+            <h3>Tabla Nutricional</h3>
+            <table>
+
+            </table>
+            
+
+        </section>
+        <section>
+            <h3>Contactenos</h3>
+            <form action="../php/formulario.php" method="post" autocomplete="off">
+                <label for="inputNombre">Nombre:</label>
+                <input type="text" id="inputNombre" class="estilosInput" name="inputNombre">
+                <br>
+                <label for="">Correo:</label>
+                <input type="email" id="correo" class="estilosInput">
+                <br>
+                <label for="">Edad</label>
+                <input type="edad" id="años" class="estilosInput">
+                <br>
+                <label for="comidaFav">Comida Favorita:</label>
+                <select name="comidaFav" id="comidaFav">
+                    <option value="desayuno">Desayuno</option>
+                </select>
+                <br>
+                <label for="comidaFav">Mensaje:</label>
+                <textarea id="w3review" name="w3review" rows="4"
+                    cols="18"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <br>
+        <a href="#">Ir al inicio</a>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Derechos Reservados &copy; | Adriana Borbon C 2023
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
