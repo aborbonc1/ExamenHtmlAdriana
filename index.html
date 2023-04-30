@@ -23,18 +23,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Platillos Principales |</a></li>
-                <li><a href="#">Postres |</a></li>
-                <li><a href="#">Tabla Nutricional |</a></li>
-                <li><a href="#">Contactenos |</a></li>
-                <li><a href="#">Sitio de interes |</a></li>
+                <li><a href="#Platillos">Platillos Principales |</a></li>
+                <li><a href="#Postres">Postres |</a></li>
+                <li><a href="#Tabla">Tabla Nutricional |</a></li>
+                <li><a href="#Contactenos">Contactenos |</a></li>
+                <li><a href="https://www.recetasgratis.net/">Sitio de interes |</a></li>
             </ul>
         </nav>
     </header>
     <main>
+
         <section>
             <p>Bienvenidos a nuestro sitio web sobre gastronomía latina, te invitamos a preparar nuestras recetas</p>
-            <h3>Platillos Principales</h3>
+            <h3 id="Platillos">Platillos Principales</h3>
             <div>
                 <Span><b>**Arroz Criollo**</b></Span>
                 <br>
@@ -44,9 +45,7 @@
                 </div>
                 <Span>Tiempo de preparación: <strong>45 minutos</strong> Número de porciones <strong>4</strong></Span>
             </div>
-
             <p><b>Ingredientes</b></p>
-
             <ul>
                 <li>Salsa de tomate</li>
                 <li>2 cucharadas de aceite 14gr</li>
@@ -56,7 +55,6 @@
                 <li>1 taza de arroz</li>
                 <li>1 taza de maíz</li>
             </ul>
-
             <p><b>Preparación</b></p>
                 <ol type="1">
                     <li>Calentar en una olla el aceite, sofreir la cebolla junto con el ajo, el pimentín por 3 minutos</li>
@@ -67,7 +65,7 @@
                 </ol>
             <sup><b>Esta rica receta fue proporcionada por María Paula</b></sup>
 
-            <h3>Postres</h3>
+            <h3 id="Postres">Postres</h3>
             <div>
                 <Span><b>**Pie de Limón**</b></Span>
                 <br>
@@ -77,9 +75,7 @@
                 </div>
                 <Span>Tiempo de preparación: <strong>1 hora 30 minutos</strong> Número de porciones <strong>8</strong></Span>
             </div>
-            
             <p><b>Ingredientes</b></p>
-            
             <ul>
                 <li>300gr de galleta de chocolate</li>
                 <li>150 gr de mantequilla derretida</li>
@@ -87,7 +83,6 @@
                 <li>2 latas de leche condesada</li>
                 <li>240 ml de jugo de lima</li>
             </ul>
-
             <div>
                 <Span><b>**Arroz con leche**</b></Span>
                 <br>
@@ -97,9 +92,7 @@
                 </div>
                 <Span>Tiempo de preparación: <strong>30 minutos</strong> Número de porciones <strong>8</strong></Span>
             </div>
-            
             <p><b>Ingredientes</b></p>
-            
             <ul>
                 <li>215 grs de arroz</li>
                 <li>2 litros de leche</li>
@@ -108,7 +101,6 @@
                 <li>1 cucharada de mantequilla</li>
                 <li>sal al agusto</li>
             </ul>
-            
             <p><b>Preparación</b></p>
             <ol type="1">
                 <li>Calentar la leche y agregar el arroz</li>
@@ -118,19 +110,49 @@
                 <li>Refrigerar por 3 horas y servir frío</li>
             </ol>
             <sup><b>Esta fácil receta es una contribución de Janeth Patricia</b></sup>
-
         </section>
 
-        <section id="sct-table">
-            <h3>Tabla Nutricional</h3>
-            <table>
-
-            </table>
-            
-
-        </section>
         <section>
-            <h3>Contactenos</h3>
+            <h3 id="Tabla">Tabla Nutricional</h3>
+            <table>
+                <tbody>
+                    <td class="negrita" colspan="3">Tabla Nutricional</td>
+                    <tr>
+                        <tr>
+                            <th class="negrita">Comida</th>
+                            <th class="negrita">Platillo</th>
+                            <th class="negrita" colspan="1">Calorias</th>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Desayuno</th>
+                            <th>Sandwich</th>
+                            <th>350</th>
+                        </tr>
+                        <tr>
+                            <th>Café</th>
+                            <th>100</th>
+                        </tr>
+                        <tr>
+                            <th>Almuerzo</th>
+                            <th>Arroz con Pollo</th>
+                            <th>400</th>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Cena</th>
+                            <th>Bistec</th>
+                            <th>500</th>
+                        </tr>
+                        <tr>
+                            <th>Vegetales</th>
+                            <th>150</th>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>      
+        </section>
+
+        <section>
+            <h3 id="Contactenos">Contactenos</h3>
             <form action="../php/formulario.php" method="post" autocomplete="off">
                 <label for="inputNombre">Nombre:</label>
                 <input type="text" id="inputNombre" class="estilosInput" name="inputNombre">
@@ -154,15 +176,17 @@
             </form>
         </section>
         <br>
-        <a href="#">Ir al inicio</a>
+        <a href="#logo">Ir al inicio</a>
     </main>
+
     <footer>
         <div>
             <p>
-                Derechos Reservados &copy; | Adriana Borbon C 2023
+                Derechos Reservados &copy; Adriana Borbon C 2023
             </p>
         </div>
     </footer>
+
 </body>
 
 </html>

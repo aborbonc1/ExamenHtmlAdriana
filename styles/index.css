@@ -28,13 +28,15 @@ nav li {
 
 /* Tabla 2 */
 
-#sct-table{
+#sct-table  tr, th, td, table{
     border: 1px solid black;
+    font-weight: lighter;
+    text-align: left;
 }
 
-#sct-table  tr, th, td{
-    border: 1px solid black;
+.negrita{
+    font-weight: bold;
+    text-align: center;
 }
-
 
 
